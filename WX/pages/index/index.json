@@ -1,0 +1,8 @@
+{"tabBar": {
+  "list": [{
+    "pagePath": "",
+    "text": "text",
+    "iconPath": "",
+    "selectedIconPath": "selectedIconPath"
+  }]
+}}

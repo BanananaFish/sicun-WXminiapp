@@ -1,0 +1,76 @@
+<!--index.wxml-->
+  <view class='page-body '>
+  <p>{{ msg }}</p>
+  <form bindsubmit="Formsubmit" bindreset="onreset">
+    <!-- 性别 -->
+    <view class="page-section">
+      <view class="page-section-title">喜欢泡泡系吗？</view>
+        <view class="weui-cell weui-cell_input">
+          <switch name="gender"/>
+        </view>
+    </view>
+
+    <!-- 姓名 -->
+    <view class="page-section">
+      <view class="page-section-title">姓名</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell_bd">
+            <input class="weui-input" name="name" id="name-input" placeholder="田所浩二" />
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 学号 -->
+    <view class="page-section">
+      <view class="page-section-title">学号</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell_bd">
+            <input class="weui-input" name="idcard" id="idcard-input" placeholder="U201114514" />
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 联系电话 -->
+    <view class="page-section">
+      <view class="page-section-title">联系电话</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell_bd">
+            <input class="weui-input" name="tel" id="tel-input" placeholder="" />
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="page-section">
+      <view class="page-section-title">宿舍</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">当前选择</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="pickerChange" value="{{index}}" range="{{array}}">
+              <view class="weui-input">{{array[index]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="btn-area">
+      <button type="primary" formType="submit">提交      </button>
+      <button formType="reset">重置</button>
+    </view>
+
+  </form>
+</view>
+
+
+
+

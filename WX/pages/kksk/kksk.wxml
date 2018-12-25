@@ -1,0 +1,16 @@
+<!--pages/kksk/kksk.wxml-->
+<view class="page-body">
+    <view class="page-section">
+        <swiper indicator-dots="true" autoplay="true" width="335" height="670">
+        <block wx:for="{{imgurl}}">
+            <swiper-item>
+            <image src="{{item}}"></image>
+            </swiper-item>
+        </block>
+        </swiper>
+    </view>
+
+    <view class="page-section" style="padding-left:30;padding-right:30">
+        <view class="page-head-title">あれは誰だ 誰だ 誰だ</view>
+    </view>
+</view>

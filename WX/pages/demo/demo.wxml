@@ -1,0 +1,10 @@
+<view class="page-body">
+    <view wx:for="{{list}}" wx:key="{{item.id}}">
+        <view id="{{item.id}}" class="kind-list-item">
+          <navigator url="../{{item.page}}/{{item.page}}" class="navigator">
+          <view class="navigator-text">{{item.page}}</view>
+          <image class="kind-list-img" src="../{{item.page}}/{{item.page}}.png"></image>
+          </navigator>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,3 @@
+/* pages/exhibition/exhibition.wxss */
+@import "../list.wxss";
+@import "../index/index.wxss";
